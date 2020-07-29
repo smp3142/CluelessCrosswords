@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msvalidate.01" content="4779EC30469E34CCFA2096EB68D681C7" />
+
+  <title>Printable Clueless Crosswords</title>
+</head>
+
+<body>
+  <h1>Printable Clueless Crosswords</h1>
+  
+  <h2 id="what-is-a-clueless-crossword-puzzle">What is a clueless crossword puzzle?</h2>
+  <p>A clueless crossword can be thought of as a cross between a normal crossword puzzle and a cryptogram. The board is
+    the normal grid of white and black squares, and the white squares need to filled in with letters to make words. All
+    words, both horizontal and vertical, need to be valid words. Rather than having a list of clues for the words
+    though, the crossword board is filled in with numbers that represent letters. Each letter corresponds to only one
+    number. A few letters will be prefilled in to give a starting point. An example of a starting board is below.</p>
+  <figure>
+    <img src="./01.png" alt="Empty puzzle" />
+    <figcaption aria-hidden="true">Empty puzzle</figcaption>
+  </figure>
+  <h2 id="what-is-this-application">What is this application?</h2>
+  <p>This application makes printable clueless crossword puzzles in PDF format. Though they are meant to be printed, the
+    PDF files do work well with tablets that allow handwriting such as an iPad or Surface.</p>
+  <p>The options for the pdf are: - The number of puzzles per pdf (1 - 20) - The page size (letter or A4) - Puzzle font
+    size (2 puzzles in portrait, or 1 large print puzzle in landscape) - The minimum percentage of blank tiles in the
+    puzzle to be prefilled (15% - 50%) - Option to print the list of 2 and 3 letter words used to make the puzzles</p>
+  <h2 id="how-do-you-play">How do you play?</h2>
+  <p>The board consists of three grids. The large grid in the middle is the puzzle itself. The small grid on the left is
+    for the player to keep track of which number corresponds to which letter. The small grid on the right is used to
+    cross off letters after they are used to avoid using a letter more than once.</p>
+  <p>There are several different ways to approach solving a puzzle. The best place to start is to find a two or three
+    letter word that is partially filled in, and that has only one possible way to complete it.</p>
+  <p>For example, the words circled in orange below could be useful places to start, but they have too many possible
+    options. There are six possible two letter words that start with “O” for example. One of which is OX, but as the X
+    is already used, it can be ignored. This still leaves 5 options however, so it is best to try somewhere else.</p>
+  <p>The next place to look is the two words circled in purple. There are two common words that are three letters long
+    and end in “GO”. They are “EGO” and “AGO”, which means the number 17 corresponds to either “A” or “E”. However, the
+    six letter word ends in the number 17, and has an “X” in the second last spot. There are no words that end in “XA”,
+    but there are several that end in “XE”. Thus, the number 17 corresponds to “E”</p>
+  <figure>
+    <img src="./02.png" alt="Preparing to start solving the puzzle" />
+    <figcaption aria-hidden="true">Preparing to start solving the puzzle</figcaption>
+  </figure>
+  <p>Once you have identified a letter, simply fill in every spot that has the number with the letter, then cross it off
+    on the right hand grid. This process is repeated until the puzzle is complete.</p>
+  <figure>
+    <img src="./03.png" alt="Starting to solve the puzzle" />
+    <figcaption aria-hidden="true">Starting to solve the puzzle</figcaption>
+  </figure>
+  <p>If there are no spots that have only a single option, then the next step could be to make an educated guess. Ways
+    to improve your guess include: * Checking that it results in valid English. Guessing that 12 is “B” results in “BEE”
+    which is a valid word for example. * Guessing that 12 is “L” results in “LEE” which is valid, but “L” is already
+    used as 03. * Guessing that 12 is “J” results in “JEE” which isn’t a valid word. * The guess can be narrowed down
+    using the rules of the English language. For example, 12 appears at the end of several words, therefore it is more
+    likely to be an “S” or “D” rather than an “A” or “Z”. * It is also worth remembering that some letters are far more
+    common than others. “E” is extremely common, while “J” is very rare for example. * A common source of difficulty is
+    accidentally using the same letter twice. Always ensuring that you cross off the used letters on the grid on the
+    right helps solve this issue.</p>
+  <h2 id="notes">Notes</h2>
+  <p>Not every letter is used in every puzzle, therefore there could be a couple of unused numbers. Generally, each
+    puzzle has between 0 and 2 unused letters.</p>
+  <p>Over 19,000 words are used in the list used in this app. It includes some uncommon or informal words, though an
+    effort was made to exclude extremely rare words, uncommon jargon, and most generally offensive words. Please create
+    an issue letting me know if any words should be considered for addition or removal.</p>
+  <p>Some words that are valid English and may appear in other word games may not be in the list used to build this app.
+    Two and three letter words are of particular note, so there is an option that can be used to print these words when
+    making a puzzle.</p>
+  <p>The algorithm used to build the boards is primarily based on randomness. This means that it may make boards that
+    have a surprising variety in difficulty. It can be adjusted to a decent extent by changing the number of hints and
+    the percentage of the board that is prefilled if desired.</p>
+  <p>The random nature of making the boards also results in some variation in terms of the time it takes to make each
+    puzzle. Generally, it should take 1 or 2 seconds, but occasionally it may take as long as 7 to 10 seconds.</p>
+  <h1 id="downloads">Downloads</h1>
+  <p>This sample has two puzzles with answers and the optional final page which lists the two and three letter words
+    used when making the puzzles. <a href="./CluelessCrosswords.pdf">Sample Puzzle</a></p>
+  <p>This sample has a single puzzle with the answer in large print. <a href="./LargePrintCrosswords.pdf">Large Print
+      Puzzle</a></p>
+  <p>The prebuilt binaries, including all required Python files, is at <a
+      href="https://github.com/smp3142/CluelessCrosswords/tree/master/binaries">Application Binaries</a></p>
+  <p>The source is available at <a href="https://github.com/smp3142/CluelessCrosswords">GitHub for smp3142</a></p>
+</body>
+
+</html>
